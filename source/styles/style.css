@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+@keyframes FadeIn{
+    0%{opacity: 0%;
+        scale: 0;
+      }
+    100%{opacity: 100%;
+    scale: 1;
+    }
+  }
+
+body{margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    background: #D5F0F4}
+
+/* Header */
+header{
+    width: 100%;
+    height: 12vh;
+    z-index: 3;
+    position: fixed;
+    background-color: black;}
+
+ul{ 
+    float: right;
+    padding-right: 2vw;
+    font-style: italic;
+    font-size: 2.5vh;
+    list-style: none;
+    display: flex;   
+}
+
+ul li{
+    font-weight: 300;
+    color: white;
+    padding: 1em;
+    transition: color 1s;
+}
+
+ul li:hover{color: gray;}
+
+a{
+    color: inherit;
+    text-decoration: none;}
+
+#logo{
+    width: 3vw;
+    padding: 4vh 2vw}
+
+/*Fim do Header */
+
+#principal{height: 80vh;}
+
+article{padding: 10% 3%;
+    display: flex;
+justify-content: space-evenly;
+}
+
+
+article h1{
+font-size: 4.5vh;
+font-style: italic;
+font-weight: 700;
+animation-name: FadeIn;
+animation-duration: 2s;
+animation-iteration-count: 1;
+}
+
+
+article h2{font-size: 3.5vh;
+font-weight: 300;
+animation-name: FadeIn;
+animation-duration: 2s;
+animation-iteration-count: 1;
+}
+
+#butoes{padding-top: 2vh;
+    animation-name: FadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+#butoes button{border: none;
+font-family: 'Red Hat Display', sans-serif;
+font-style: italic;
+font-weight: 300;
+min-width: 20vw;
+min-height: 7vh;
+font-size: 4vh;
+cursor: pointer;
+color: white;
+transition: background-color 0.2s;
+}
+
+
+
+#contato{
+    
+    background-color: black;
+    margin-right: 2vw;}
+
+#contato:hover{background-color: #313131;}
+
+#portfolio{
+    background-color: #36B55A;
+    
+}
+
+#portfolio:hover{background-color: #2E8C48;}
+
+#left h4 {font-size: 2vh;
+    animation-name: FadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+#left h4 a{text-decoration: underline;
+    transition: opacity 0.2s;
+}
+
+#left h4 a:hover{opacity: 50%}
+
+#foto{width: 30vw;
+    border-radius: 500px;
+    animation-name: FadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+#social img {
+    
+    animation-name: FadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    transition: opacity 0.2s;
+   width: 9vh;
+height: 9vh;
+}
+
+#social img:hover{opacity: 50%}
+#Principal h3{
+    
+    cursor: pointer;
+    margin-top: -16vh;
+    text-align: center;
+    font-size: 2vh;
+    animation-name: FadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    transition: opacity 0.2s;
+    
+}
+
+#Principal h3:hover{ opacity: 50%;}
+
+footer{
+padding: 2vw;
+display: grid;
+text-align: center;
+grid-template-columns: 1fr 1fr;
+height: 82vh;
+color: white;
+margin-top: 9vh;    
+background-color:#4E4E4E;
+
+}
+
+.habilidade{animation-name: FadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1;}
+
+footer h1{font-size: 4vh;
+font-style: italic;
+font-weight: 100;
+}
+
+footer h2{
+    font-size: 3vh;
+    font-weight: 100;}
+
+.icones{width: 8.5vh;
+height: 8.5vh;
+}
+
+/*Responsivo */
+@media (max-width: 610px){
+
+    #logo{display: none;}
+
+    footer{grid-template-columns: 1fr;}
+
+    ul{ margin-top: 0;
+        padding-left: 3vw;
+        text-align: center;
+        float: none}
+
+    article{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 30%}
+
+    #portfolio {margin-top: 3vh;}
+}
+
+
+@media (max-width: 900px){
+
+
+    header{height: 10vh}
+
+    
+    
+    #Principal h3{margin-top: 0;}
+
+    article{padding-top: 30%}
+}
