@@ -104,9 +104,26 @@ transition: opacity 1s;
 
 .texto span:hover{opacity: 30%}
 
-@media (max-width: 610px){
+
+
+
+@media (max-width: 900px){
+
+
+    header{height: 10vh}
+
 
     #logo{display: none;}
+
+    article{padding-top: 20%}
+}
+
+@media (max-width: 610px){
+
+
+
+
+
 
     footer{grid-template-columns: 1fr;}
 
@@ -115,22 +132,20 @@ transition: opacity 1s;
         text-align: center; 
         float: none}
 
+
+    #foto{display:none}
+
+    .contato h2{
+        font-size: 2.5vh;
+    }
+
+    .contato img{display: none;}
     article{
-        flex-direction: column-reverse;
+        
+        flex-direction: column;
+        align-items: center;
         text-align: center;
         padding-top: 30%}
 
     
-}
-
-
-@media (max-width: 900px){
-
-
-    header{height: 10vh}
-
-    
-    
-
-    article{padding-top: 30%}
 }

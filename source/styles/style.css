@@ -115,7 +115,6 @@ transition: background-color 0.2s;
 }
 
 #left h4 a{text-decoration: underline;
-    transition: opacity 0.2s;
 }
 
 #left h4 a:hover{opacity: 50%}
@@ -132,7 +131,7 @@ transition: background-color 0.2s;
     animation-name: FadeIn;
     animation-duration: 2s;
     animation-iteration-count: 1;
-    transition: opacity 0.2s;
+  
    width: 9vh;
 height: 9vh;
 }
@@ -147,7 +146,7 @@ height: 9vh;
     animation-name: FadeIn;
     animation-duration: 2s;
     animation-iteration-count: 1;
-    transition: opacity 0.2s;
+   
     
 }
 
@@ -158,7 +157,7 @@ padding: 2vw;
 display: grid;
 text-align: center;
 grid-template-columns: 1fr 1fr;
-height: 82vh;
+gap: 10vh;
 color: white;
 margin-top: 9vh;    
 background-color:#4E4E4E;
@@ -187,7 +186,11 @@ height: 8.5vh;
 
     #logo{display: none;}
 
-    footer{grid-template-columns: 1fr;}
+
+
+    footer{grid-template-columns: 1fr;
+
+    }
 
     ul{ margin-top: 0;
         padding-left: 3vw;
@@ -208,7 +211,7 @@ height: 8.5vh;
 
     header{height: 10vh}
 
-    
+    #logo{display: none;}
     
     #Principal h3{margin-top: 0;}
 

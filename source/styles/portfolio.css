@@ -55,6 +55,9 @@ text-align: center;
 
 #topo{width: 5%;
 height: 5%;
+animation-name: FadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
 }
 
 #conteudo{display: grid;
@@ -66,7 +69,11 @@ grid-template-columns: 15vw 15vw 15vw 15vw;
 
 .item{
     cursor: pointer;
-    transition: background-color 1s;}
+    transition: background-color 1s;
+    animation-name: FadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
 
 .item:hover{background-color: rgb(224, 224, 224, 0.5)
 }
@@ -81,4 +88,51 @@ grid-template-columns: 15vw 15vw 15vw 15vw;
 
 .item h2{font-size: 2vh;
 font-weight: 400;
+}
+
+
+@media (max-width: 610px){
+
+    
+
+
+    #topo{width: 20vw;
+    height: 20vw;
+    }
+
+    .item img{width: 15vw;
+    height: 15vw;
+    }
+
+    #conteudo{
+
+        
+        padding: 18%;
+        grid-template-columns: 30vh;}
+
+    footer{grid-template-columns: 1fr;}
+
+    ul{ margin-top: 0;
+        padding-left: 3vw;
+        text-align: center; 
+        float: none}
+
+    article{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 30%}
+
+    
+}
+
+
+@media (max-width: 900px){
+
+
+    header{height: 10vh}
+
+    #logo{display: none;}
+    
+
+    article{padding-top: 30%}
 }
