@@ -4,7 +4,7 @@ function RolarProFim(){
 }
 
 function CopiaLink(copia){
-    if(copia == 1){navigator.clipboard.writeText("christianotteromarques@gmail.com")};
+    if(copia == 1){navigator.clipboard.writeText("contato@christianottero.com")};
     if(copia == 2){navigator.clipboard.writeText("+55 31 97337-2997")};
     alert("Texto Copiado");
 }
